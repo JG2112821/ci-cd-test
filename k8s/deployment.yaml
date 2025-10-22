@@ -3,18 +3,18 @@ kind: Deployment
 metadata:
   name: meu-app-deployment
 spec:
-  [cite_start]replicas: 2 # [cite: 977]
+  replicas: 2 # [cite: 977]
   selector:
     matchLabels:
-      [cite_start]app: meu-app # [cite: 980]
+      app: meu-app # [cite: 980]
   template:
     metadata:
       labels:
-        [cite_start]app: meu-app # [cite: 984]
+        app: meu-app # [cite: 984]
     spec:
       containers:
       - name: meu-app-container
         # Altere para o seu utilizador e nome de app!
-        [cite_start]image: ale2555/meu-app:1 # [cite: 988] (Use a tag da primeira execução)
+        image: ale2555/meu-app:1 # [cite: 988] (Use a tag da primeira execução)
         ports:
-        - [cite_start]containerPort: 8080 # [cite: 997] (Porta do server.js)
+        - containerPort: 8080 # [cite: 997] (Porta do server.js)
