@@ -3,7 +3,7 @@ name: CI Pipeline
 on:
   push:
     branches:
-      - master  # [cite: 650, 654] (ou 'main')
+      - main  # [cite: 650, 654] (ou 'main')
 
 jobs:
   build:
