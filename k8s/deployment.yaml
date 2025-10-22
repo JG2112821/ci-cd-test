@@ -15,6 +15,6 @@ spec:
       containers:
       - name: meu-app-container
         # Altere para o seu utilizador e nome de app!
-        image: ale2555/meu-app:1 # [cite: 988] (Use a tag da primeira execução)
+        image: ale2555/meu-app:2 # [cite: 988] (Use a tag da primeira execução)
         ports:
         - containerPort: 8080 # [cite: 997] (Porta do server.js)
