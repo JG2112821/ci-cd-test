@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: meu-app-service
+spec:
+  [cite_start]type: LoadBalancer # [cite: 1011] (Funciona bem com Docker Desktop)
+  selector:
+    [cite_start]app: meu-app # [cite: 1013]
+  ports:
+  - protocol: TCP
+    port: 80       # A porta que acede no seu navegador
+    [cite_start]targetPort: 8080 # A porta do container (server.js) [cite: 1015]
